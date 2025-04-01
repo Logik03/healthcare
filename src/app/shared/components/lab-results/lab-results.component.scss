@@ -1,0 +1,77 @@
+.lab-results {
+    background: white;
+    border-radius: 8px;
+  }
+  
+  .lab-results h3 {
+    margin: 0 0 16px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333; 
+  }
+  
+  mat-nav-list {
+    max-height: 14vh; 
+    overflow-y: auto; 
+  }
+  
+  .result-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 4px; 
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.2s ease-in-out;
+    text-decoration: none;
+    
+  }
+  
+  .result-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+  }
+  .result-item:last-child {
+    border-bottom: none;
+  }
+  
+  .result-item:hover {
+    background-color: #f5f8fa; 
+  }
+  
+  .result-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    flex: 1; 
+  }
+  
+  .download-button {
+    color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-icon {
+    width: 16px;
+    height: 16px;
+  }
+  mat-nav-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  mat-nav-list::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4;
+    border-radius: 4px;
+  }
+  
+  mat-nav-list::-webkit-scrollbar-thumb:hover {
+    background-color: #a6a6a6;
+  }
+  
+  mat-nav-list::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  

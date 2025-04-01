@@ -1,0 +1,51 @@
+<div class="profile-card">
+    <img class="profile-picture" [src]="user?.profilePicture" alt="{{ user?.name }}" />
+    <h2 class="profile-name">{{ user?.name }}</h2>
+    <div class="profile-info">
+      <div class="info-row">
+        <img src="assets/icons/InsuranceIcon.svg" alt="home icon" class="nav-icon" />
+        <div>
+            <span>Date Of Birth</span>
+            <br />
+            <strong>{{ user?.dateOfBirth | date:'MMMM d, y' }}</strong>
+          </div>
+      </div>
+      <div class="info-row">
+        <img src="assets/icons/FemaleIcon.svg" alt="home icon" class="nav-icon" />
+        <div>
+            <span>Gender</span>
+            <br />
+            <strong>{{ user?.gender }}</strong>
+        </div>
+        
+      </div>
+      <div class="info-row">
+        <img src="assets/icons/PhoneIcon.svg" alt="home icon" class="nav-icon" />
+        <div>
+            <span>Contact Info.</span>
+            <br />
+            <strong>{{ user?.contactInfo }}</strong>
+        </div>
+        
+      </div>
+      <div class="info-row">
+        <img src="assets/icons/PhoneIcon.svg" alt="home icon" class="nav-icon" />
+        <div>
+            <span>Emergency Contacts</span>
+            <br />
+        <strong>{{ user?.emergencyContact }}</strong>
+        </div>
+        
+      </div>
+      <div class="info-row">
+        <img src="assets/icons/InsuranceIcon.svg" alt="home icon" class="nav-icon" />
+        <div>
+            <span>Insurance Provider</span>
+            <br />
+        <strong>{{ user?.insuranceProvider }}</strong>
+        </div>
+        
+      </div>
+    </div>
+    <button class="show-info-button">Show All Information</button>
+  </div>

@@ -1,0 +1,77 @@
+.patient-list {
+    height: 99vh; 
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+    background: white;
+    overflow: hidden;
+  }
+  
+  .list-header {
+    padding: 16px 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0; 
+  
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0;
+      color: #1a1a1a;
+    }
+  }
+  
+  .scrollable-list {
+    height: 0;
+    min-height: 10px;
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding: 0;
+  
+    &::-webkit-scrollbar {
+      width: 4px;
+      background: transparent;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+  
+    a[mat-list-item] {
+        
+        height: 80px; 
+        
+      }
+    .list-item-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .patient-name {
+      font-weight: var(--unnamed-font-weight-bold);
+      font-size: var(--unnamed-font-size-14);
+      font-family: var(--unnamed-font-family-manrope);
+      margin-bottom: 4px;
+    }
+  
+    .patient-details {
+      font-size: 0.875em;
+      color: gray;
+    }
+  
+    .ellipsis-icon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
+  
+  

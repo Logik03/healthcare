@@ -1,0 +1,53 @@
+.vital-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 24px;
+    margin-top: 1rem;
+  }
+
+  .stat-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 16px;
+    border-radius: 12px;
+
+    .icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info {
+      h4 {
+        margin: 0;
+        font-weight: normal;
+        color: rgba(0, 0, 0, 0.6);
+      }
+
+      .value {
+        font-size: 24px;
+        font-weight: 500;
+        margin: 8px 0;
+      }
+
+      .status {
+        font-size: 14px;
+        &.low { color: #3f51b5; }
+      }
+    }
+    
+  }
+  .respiratory {
+    background-color: #E0F3FA;
+}
+.temperature {
+    background-color: #FFE6E9;
+}
+.heart-rate {
+    background-color: #FFE6F1;
+}

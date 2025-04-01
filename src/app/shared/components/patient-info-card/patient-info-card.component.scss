@@ -1,0 +1,62 @@
+.profile-card {
+    background: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    //width: 200px !important;
+  }
+  
+  .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+  }
+  
+  .profile-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .profile-info {
+    text-align: left;
+  }
+  
+  .info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    .nav-icon {
+        margin-right:20px !important;
+    }
+  }
+  
+  
+  .info-row span {
+    flex: 1;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .info-row strong {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .show-info-button {
+    margin-top: 50px;
+    padding: 10px 20px;
+    background: #4ae1c1;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .show-info-button:hover {
+    background: #3ac9a8;
+  }
+  

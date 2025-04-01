@@ -1,0 +1,103 @@
+.dashboard-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    //height: 100%;
+    background-color: #f6f7f8;
+    gap: 16px;
+  }
+  
+  .content-area {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .patient-list {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: fit-content;
+  }
+  
+  .main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    height: fit-content;
+  }
+
+  .diagnosis-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .diagnosis-history, 
+  .diagnostic-list{
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .patient-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .patient-info, 
+  .lab-result {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+  }
+  @media screen and (max-width: 1024px) {
+    .content-area {
+        grid-template-columns: 250px 1fr; /* Adjust sidebar width for tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-area {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .patient-list {
+        order: 1; /* Ensure the patient list appears first */
+    }
+
+    .diagnosis-section, 
+    .patient-info-section {
+        order: 2; /* Stack sections below the patient list */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-area {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .patient-list,
+    .diagnosis-history, 
+    .diagnostic-list,
+    .patient-info, 
+    .lab-result {
+        padding: 12px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Adjust font sizes for better readability */
+    }
+}

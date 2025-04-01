@@ -1,0 +1,120 @@
+.blood-pressure-container {
+    background-color: #F5F3FF;
+    padding: 24px;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-content {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .chart-section {
+    flex: 1;
+    max-width: calc(100% - 224px); // 200px for metrics + 24px gap
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 95%;
+  
+    h2 {
+      font-size: var(--unnamed-font-size-18);
+      font-weight: var(--unnamed-font-weight-bold);
+      font-family: var(--unnamed-font-family-manrope);
+      margin: 0;
+      color: var(--unnamed-color-072635);
+      letter-spacing: var(--unnamed-character-spacing-0);
+    }
+  
+    select {
+      background-color: transparent;
+      border: none;
+      color: #666;
+      font-size: var(--unnamed-font-size-14);
+      font-family: var(--unnamed-font-family-manrope);
+      padding-right: 24px;
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23666' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right center;
+      outline: none;
+  
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  
+  .chart-container {
+    height: 250px;
+  }
+  
+  .metrics-container {
+    width: 200px;
+    padding-top: 40px;
+  }
+  
+  .separator {
+    height: 1px;
+    background-color: #E5E7EB;
+    margin: 16px 0;
+  }
+  
+  .metric {
+    .metric-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      color: #666;
+      font-size: 14px;
+    }
+  
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+  
+      &.systolic {
+        background-color: #E770FF;
+      }
+  
+      &.diastolic {
+        background-color: #818CF8;
+      }
+    }
+  
+    .value {
+      font-size: 36px;
+      font-weight: 600;
+      color: #111827;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+  
+    .trend {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 14px;
+      color: #666;
+  
+      .arrow {
+        font-size: 12px;
+      }
+  
+      &.higher .arrow {
+        color: #E770FF;
+      }
+  
+      &.lower .arrow {
+        color: #818CF8;
+      }
+    }
+  }

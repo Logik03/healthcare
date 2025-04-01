@@ -1,0 +1,12 @@
+<div class="lab-results">
+    <h3>Lab Results</h3>
+    <mat-nav-list>
+      <a mat-list-item *ngFor="let result of results" class="result-item">
+        <div class="result-container">
+          <span class="result-title">{{ result.name }}</span>
+          <img src="assets/icons/download_icon.svg" alt="Download icon" class="nav-icon" />
+        </div>
+      </a>
+    </mat-nav-list>
+</div>
+

@@ -1,0 +1,71 @@
+.diagnostic-list {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+    overflow-y: scroll; 
+    padding: 0;
+    height: 20vh;
+  
+    &::-webkit-scrollbar {
+      width: 4px;
+      background: transparent;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    h3 {
+      margin: 0 0 16px;
+    }
+  }
+
+  .status {
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+
+    &.active { background: #e3f2fd; color: #1976d2; }
+    &.inactive { background: #f5f5f5; color: #616161; }
+    &.cured { background: #e8f5e9; color: #388e3c; }
+  }
+
+  .diagnostic-list table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.diagnostic-list th {
+    background-color: #f9fbfc; 
+    padding: 12px 16px; 
+    font-weight: bold;
+    text-align: left;
+    color: #1a1a1a; 
+}
+
+.diagnostic-list th:first-child {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.diagnostic-list th:last-child {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.diagnostic-list td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0; 
+}
+
+.diagnostic-list tr:last-child td {
+    border-bottom: none; 
+}

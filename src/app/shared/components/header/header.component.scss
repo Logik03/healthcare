@@ -1,0 +1,125 @@
+.header {
+    position: relative; /* To allow positioning within a container */
+    top: 18px;
+    left: 18px;
+    width: calc(100% - 36px); /* Adjust to fit within the viewport with 18px padding on both sides */
+    height: 72px;
+    background: #FFFFFF;
+    border-radius: 70px; /* Makes the corners rounded as per the Adobe XD design */
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better design aesthetics */
+    border: 1px solid rgba(0, 0, 0, 0.12); /* Matches the style from your earlier example */
+  
+    @media (max-width: 768px) {
+      top: 8px;
+      left: 8px;
+      width: calc(100% - 16px);
+      height: auto;
+      border-radius: 30px; /* Slightly reduce the radius for smaller devices */
+      flex-direction: column;
+      padding: 16px;
+    }
+  }
+
+
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  
+    img {
+      height: 32px;
+  
+      @media (max-width: 768px) {
+        height: 24px;
+      }
+    }
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 16px;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+      margin-top: 16px;
+    }
+  
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: var(--unnamed-color-072635);
+      border-radius: 8px;
+      font-family: var(--unnamed-font-family-manrope);
+      font-weight: var(--unnamed-font-weight-bold);
+      font-size: var(--unnamed-font-size-14);
+  
+      &.active {
+        background-color: var(--activestate_bg_1);
+        color: var(--unnamed-color-072635);
+        width: auto;
+        border-radius: 41px;
+      }
+    }
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+  
+      @media (max-width: 768px) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  
+    .user-info {
+      display: flex;
+      flex-direction: column;
+      font-family: var(--unnamed-font-family-manrope);
+      font-weight: var(--unnamed-font-weight-bold);
+  
+      .name {
+        font-weight: 500;
+        font-size: 14px;
+  
+        @media (max-width: 768px) {
+          font-size: 12px;
+        }
+      }
+      
+  
+      .role {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: var(--unnamed-font-weight-normal);
+  
+        @media (max-width: 768px) {
+          font-size: 10px;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      margin-top: 16px;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  

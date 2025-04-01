@@ -1,0 +1,21 @@
+<div class="patient-list">
+    <div class="list-header">
+      <h2>Patients</h2>
+      <img src="assets/icons/search.svg" alt="home icon" class="nav-icon" />
+    </div>
+
+    <mat-nav-list class="scrollable-list">
+      <a mat-list-item *ngFor="let patient of patients" 
+         [class.selected]="patient.id === selectedPatientId"
+         (click)="onSelect(patient)">
+        <img matListItemAvatar [src]="patient.profile_picture" [alt]="patient.name">
+        <div class="list-item-content">
+            <div>
+              <div class="patient-name">{{ patient.name }}</div>
+              <div class="patient-details">{{ patient.gender }}, {{ patient.age }}</div>
+            </div>
+            <img class="ellipsis-icon" src="assets/icons/horizontal_ellipsis.svg" alt="Menu">
+          </div>
+      </a>
+    </mat-nav-list>
+</div>
